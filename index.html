@@ -1,185 +1,339 @@
 <!DOCTYPE html>
-<html lang="eng-ca">
-
+<html lang="en-CA">
   <head>
-    <meta charset="UTF-8">
-
-    <title>Home Page</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <meta charset="utf-8">
+    <title> home page</title>
+    <link rel="stylesheet" href="globals.css">
+    <link rel="stylesheet" href="style.css">
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amarante&family=DynaPuff:wght@400..700&family=Fascinate+Inline&display=swap" rel="stylesheet">
+    
+   <style>
+    .home {
+  background-color: #ffe5f0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
 
-    <!-- created by amara damji on November 18 -->
-    <style>
-      body,
-      h1,
-      h2,
-      h3,
-      p,
-      ul {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
+.home .div {
+  background-color: #ffe5f0;
+  overflow: hidden;
+  width: 1440px;
+  height: 3197px;
+  position: relative;
+}
 
-      h1,
-      h3 {
-        font-family: "Amarante", serif;
-        font-weight: 400;
-        font-style: normal;
-      }
+.home .overlap {
+  position: absolute;
+  width: 1440px;
+  height: 1972px;
+  top: 0;
+  left: 0;
+}
 
-      h2 {
-        font-family: "Fascinate Inline", system-ui;
-        font-weight: 400;
-        font-style: normal;
-      }
+.home .overlap-group {
+  position: absolute;
+  width: 1440px;
+  height: 1957px;
+  top: 0;
+  left: 0;
+}
 
-      body {
-        font-family: "DynaPuff", serif;
-        font-optical-sizing: auto;
-        font-weight: <weight>;
-        font-style: normal;
-        font-variation-settings: "wdth" 100;
-        background-color: #f8ccd7;
-        color: #fff;
-      }
+.home .vector {
+  position: absolute;
+  width: 1440px;
+  height: 1109px;
+  top: 0;
+  left: 0;
+}
 
-      .bio-heading {
-        font-family: "Fascinate Inline", system-ui;
-        font-weight: 400;
-        font-style: normal;
-        color: #FF8061;
-        text-align: center;
-        margin-bottom: 15px;
-      }
+.home .star {
+  position: absolute;
+  width: 444px;
+  height: 726px;
+  top: 39px;
+  left: 0;
+}
 
-      /* Navigation Bar */
-      .navbar {
-        background-color: #FF8061;
-        padding: 10px 20px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        color: #fff;
-      }
+.home .img {
+  position: absolute;
+  width: 1023px;
+  height: 1123px;
+  top: 0;
+  left: 417px;
+}
 
-      .navbar a {
-        text-decoration: none;
-        color: #fff;
-        margin: 10px;
-        font-weight: bold;
-      }
+.home .star-2 {
+  position: absolute;
+  width: 909px;
+  height: 1013px;
+  top: 0;
+  left: 531px;
+}
 
-      /* Main Content */
-      .containerA {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 40px 20px;
-        max-width: 1200px;
-        margin: 0 auto;
-      }
+.home .vector-2 {
+  position: absolute;
+  width: 494px;
+  height: 857px;
+  top: 1083px;
+  left: 118px;
+}
 
-      .left-section {
-        flex: 1;
-        text-align: left;
-      }
+.home .group {
+  position: absolute;
+  width: 278px;
+  height: 80px;
+  top: 890px;
+  left: 336px;
+}
 
-      .left-section .title {
-        font-size: 40px;
-        font-weight: bold;
-        color: #fff;
-        margin-bottom: 10px;
-      }
+.home .text-wrapper {
+  position: absolute;
+  width: 276px;
+  top: 0;
+  left: 0;
+  font-family: "Amarante";
+  font-weight: 400;
+  color: #ffddc6;
+  font-size: 64px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
 
-      .left-section .subtitle {
-        font-size: 19.2px;
-        color: #fff;
-        margin-bottom: 30px;
-      }
+.home .text-wrapper-2 {
+  position: absolute;
+  width: 748px;
+  top: 401px;
+  left: 0;
+  text-shadow: 0px 4px 4px #00000040;
+  font-family: "Amarante";
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 200px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
 
-      .right-section {
-        flex: 2;
-        text-align: left;
-        background: #fff;
-        color: #4a4a4a;
-        padding: 20px;
-        border-radius: 10px;
-      }
+.home .mask-group {
+  position: absolute;
+  width: 494px;
+  height: 857px;
+  top: 1100px;
+  left: 84px;
+}
 
-      .right-section .photo {
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        overflow: hidden;
-        margin: 0 auto 20px;
-      }
+.home .text-wrapper-3 {
+  position: absolute;
+  width: 433px;
+  top: 1167px;
+  left: 831px;
+  font-family: "Fascinate Inline";
+  font-weight: 400;
+  color: #ff8060;
+  font-size: 128px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
 
-      .right-section .photo img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
+.home .hi-there-i-m-amara-a {
+  position: absolute;
+  width: 683px;
+  top: 1367px;
+  left: 685px;
+  font-family: "DynaPuff";
+  font-weight: 400;
+  color: #a32a0c;
+  font-size: 36px;
+  text-align: center;
+  letter-spacing: 1.80px;
+  line-height: 55px;
+}
 
-      .right-section p {
-        font-size: 16px;
-        line-height: 1.6;
-      }
+.home .overlap-2 {
+  position: absolute;
+  width: 1440px;
+  height: 1109px;
+  top: 2088px;
+  left: 0;
+  background-image: url(./img/image.svg);
+  background-size: 100% 100%;
+}
 
-      /* Footer Text */
-      .footer {
-        margin-top: 20px;
-        font-weight: bold;
-        color: #fff;
-        text-align: center;
-      }
-      
-    </style>
+.home .overlap-3 {
+  position: absolute;
+  width: 1199px;
+  height: 832px;
+  top: 177px;
+  left: 254px;
+}
+
+.home .polygon {
+  position: absolute;
+  width: 454px;
+  height: 518px;
+  top: 99px;
+  left: 0;
+}
+
+.home .rectangle {
+  position: absolute;
+  width: 450px;
+  height: 453px;
+  top: 220px;
+  left: 588px;
+  background-color: #ffe2b3;
+  border-radius: 15px;
+  transform: rotate(28.37deg);
+  box-shadow: 0px 4px 4px #00000040;
+}
+
+.home .ellipse {
+  position: absolute;
+  width: 398px;
+  height: 398px;
+  top: 0;
+  left: 324px;
+  background-color: #d2d2ff;
+  border-radius: 199px;
+  box-shadow: 0px 4px 4px #00000040;
+}
+
+.home .p {
+  position: absolute;
+  width: 1065px;
+  top: 947px;
+  left: 187px;
+  text-shadow: 0px 4px 4px #00000040;
+  font-family: "Fascinate Inline";
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 64px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.home .overlap-group-wrapper {
+  position: fixed;
+  width: 1502px;
+  height: 110px;
+  top: 0;
+  left: -36px;
+}
+
+.home .overlap-group-2 {
+  position: relative;
+  width: 1494px;
+  height: 110px;
+  background-color: #ff8060;
+}
+
+.home .text-wrapper-4 {
+  position: absolute;
+  width: 180px;
+  top: 41px;
+  left: 812px;
+  font-family: "Amarante";
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.home .text-wrapper-5 {
+  position: absolute;
+  width: 180px;
+  top: 41px;
+  left: 1038px;
+  font-family: "Amarante";
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.home .text-wrapper-6 {
+  position: absolute;
+  width: 180px;
+  top: 41px;
+  left: 1263px;
+  font-family: "Amarante";
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.home .text-wrapper-7 {
+  position: absolute;
+  width: 63px;
+  top: 25px;
+  left: 71px;
+  font-family: "Amarante";
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 48px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+  </style>  
   </head>
-
   <body>
-    <!-- Navigation -->
-    <div class="navbar">
-
-      <h3>
-        <div>AD</div>
-      </h3>
-      <div>
-        <h3>
-          <a href="#">Graphic Design</a>
-          <a href="#">Visual Art</a>
-          <a href="#">Personal Life</a>
-        </h3>
-      </div>
-    </div>
-
-    <!-- Main Section -->
-    <div class="containerA">
-      <!-- Left Section -->
-      <div class="left-section">
-        <h1 class="title">Amara Damji</h1>
-        <h3 class="subtitle">Portfolio</h3>
-      </div>
-
-      <!-- Right Section -->
-      <div class="right-section">
-        <h2 class="bio-heading">Hello!</h2>
-        <div class="photo">
-          <img src="https://via.placeholder.com/150" alt="Profile Photo">
+    <div class="home">
+      <div class="div">
+        <div class="overlap">
+          <div class="overlap-group">
+            <img class="vector" src="wave 1 home.png">
+            <img class="star" src="Star 3.png">
+            <img class="img" src="Star 1.png">
+            <img class="star-2" src="Star 2.png">
+            <img class="vector-2" src="Vector.png">
+            <div class="group"><div class="text-wrapper">Portfolio</div></div>
+            <div class="text-wrapper-2">Amara Damji</div>
+            <img class="mask-group" src="Mask group.png">
+          </div>
+          <div class="text-wrapper-3">Hello!</div>
+          <p class="hi-there-i-m-amara-a">
+            Hi there! I&#39;m Amara, a GBDA student at the University of Waterloo. Welcome to my portfolio, where I
+            showcase my work and share some of my experiences. I&#39;m passionate about the arts, both visual and
+            theatrical, and I love traveling, baking, and spending time with friends. Thanks for visiting—I hope you
+            enjoy exploring my site!
+          </p>
         </div>
-
-        <p>
-          Hi there! I'm Amara, a GBDA student at the University of Waterloo. Welcome to my portfolio, where I showcase my work and share some of my experiences. I'm passionate about the arts, both visual and theatrical, and I love traveling, baking, and spending time with friends. Thanks for visiting—I hope you enjoy exploring my site!
-        </p>
+        <div class="overlap-2">
+          <img class="vector" src="wave 2 home.png">
+          <div class="overlap-3">
+            <img class="polygon" src="img/polygon-1.svg" />
+            <div class="rectangle"></div>
+            <div class="ellipse"></div>
+          </div>
+          <p class="p">Come get a glimpse of my mind</p>
+        </div>
+        <div class="overlap-group-wrapper">
+          <div class="overlap-group-2">
+            <div class="text-wrapper-4">Graphic Design</div>
+            <div class="text-wrapper-5">Visual Art</div>
+            <div class="text-wrapper-6">Experiences</div>
+            <div class="text-wrapper-7">AD</div>
+          </div>
+        </div>
       </div>
     </div>
-
-    <!-- Footer -->
-    <h2>
-      <div class="footer">Come get a glimpse of my mind</div>
-    </h2>
   </body>
-
 </html>
